@@ -2,3 +2,4 @@ import streamlit as st
 
 st.title("Especialización Pyhton for Analytics")
 st.sidebar.title("Parámetros")
+st.write("Elaborado por: Liz Marquez")
