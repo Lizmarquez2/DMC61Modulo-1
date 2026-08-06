@@ -3,3 +3,7 @@ import streamlit as st
 st.title("Especialización Pyhton for Analytics")
 st.sidebar.title("Parámetros")
 st.write("Elaborado por: Liz Marquez")
+
+valor_inicial = st.number_input("Ingrese el valor inicial")
+valor_final = st.number_input("Ingrese el valor final")
+
