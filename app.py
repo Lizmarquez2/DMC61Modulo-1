@@ -1,17 +1,20 @@
 import streamlit as st
+import numpy as np
 
 st.title("Especialización Pyhton for Analytics")
 st.sidebar.title("Parámetros")
 st.write("Elaborado por: Liz Marquez")
 
-st.image ("PYTHON.png",width = 300)
-st.slidebar.image ("DMC.png", width = 100)
+st.image("PYTHON.png",width = 300)
+st.slidebar.image("DMC.png", width = 100)
 
 
 modulos = st.sidebar.selectbox ("Seleccione un módulo",["Módulo Listas","Módulo Arreglos","Módulo Funciones"])
 
 if modulos == "Módulo Listas":
+
   st.write("Bienvenido al módulo Listas")
+  
   valor_inicial = st.number_input("Ingrese el valor inicial")
   valor_final = st.number_input("Ingrese el valor final")
   
@@ -19,7 +22,13 @@ if modulos == "Módulo Listas":
   st.write(lista_numeros) 
   
 elif modulos =="Módulo Arreglos":
+  
   st.write("Bienvenido al módulo Arreglos")
+
+  cantidad_elementos = t.slider("Seleccione la cantidad de elementos de su arreglo", 1,100) 
+  cantidad_arreglo = np.arange(cantidad_elementos)
+  st.write(cantidad_arreglo)
+
 else:
   st.write("Bienvenido al módulo Funciones")
 
