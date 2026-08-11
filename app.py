@@ -4,6 +4,10 @@ st.title("Especialización Pyhton for Analytics")
 st.sidebar.title("Parámetros")
 st.write("Elaborado por: Liz Marquez")
 
+st.image ("PYTHON.png",width = 300)
+st.slidebar.image ("DMC.png", width = 100)
+
+
 modulos = st.sidebar.selectbox ("Seleccione un módulo",["Módulo Listas","Módulo Arreglos","Módulo Funciones"])
 
 if modulos == "Módulo Listas":
