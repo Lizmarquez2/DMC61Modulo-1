@@ -39,6 +39,6 @@ else:
   tasa_porcentaje = st.number_input("Tasa de interés anual (%)", min_value=0.0, value=0.05)
 
 
-if st.buttom("Calcular")
+if st.buttom("Calcular"):
    resultado_interes_simple = lf.interes_simple(capital_inicial,tiempo_meses,tasa_porcentaje)
    st.write(resultado_interes_simple)
